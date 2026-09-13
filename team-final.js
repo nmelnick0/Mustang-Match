@@ -6,6 +6,7 @@ const displaySkills=skills=>skills.map(skillLabel).join(' · ');
 function roleChoices(person,project){
   const skills=person.skills,needs=projectNeeds(project);
   const choices=[];
+  if(skills.includes('design')&&skills.includes('marketing'))choices.push('Experience & Brand');
   if(skills.includes('code')&&skills.includes('data'))choices.push(needs.includes('data')?'AI / Backend':'Technical Lead');
   if(skills.includes('code'))choices.push('Frontend Builder');
   if(skills.includes('design'))choices.push('Product Designer');
@@ -30,7 +31,7 @@ function assignRoles(matches,project){
 function firstContribution(person,project){
   const target=project[4].toLowerCase();
   if(person.role==='Technical Lead'||person.role==='AI / Backend'||person.role==='Frontend Builder'||person.role==='Prototype Engineer')return `Build the first ${project[0]} working flow for ${target}.`;
-  if(person.role==='Product Designer')return `Design the first ${project[0]} onboarding and core screen.`;
+  if(person.role==='Product Designer'||person.role==='Experience & Brand')return `Design the first ${project[0]} onboarding and core screen.`;
   if(person.role==='Data & Insights')return `Create the first ${project[0]} insights dashboard.`;
   if(person.role==='Growth & Validation')return `Interview 10 ${target} and test the ${project[0]} pitch.`;
   if(person.role==='Community Lead')return `Recruit five ${target} for the first ${project[0]} test.`;
