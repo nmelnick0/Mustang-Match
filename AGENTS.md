@@ -19,7 +19,7 @@ After STOP 1, help the student propose and approve the six TARGET lines and one 
 
 ## My standing rule
 
-[One observable, student-approved rule that protects this project's purpose or experience.]
+Every primary user action must produce an immediate, obvious visual response—such as a selected state, progress update, result, or confirmation—within one interaction.
 
 ## Workflow
 
