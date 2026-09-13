@@ -1,0 +1,52 @@
+/* Focused final pass for the team-result screen. */
+#team .teamhero{grid-template-columns:minmax(255px,.78fr) minmax(0,1.22fr);align-items:start;margin:18px 0 0}
+#team .picked{padding:28px;background:var(--forest);color:#fff}
+#team .picked .eyebrow{color:#c9e3d2;margin-bottom:12px}
+#team .picked h3{margin:0;font-size:clamp(31px,3.2vw,47px);line-height:.98;letter-spacing:-.06em}
+#team .selected-score{display:block;margin:18px 0 14px;color:#ffd96f;font-size:27px;letter-spacing:-.04em}
+#team .selected-score span{font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+#team .selected-description{margin:0;color:#e4f2e8;font-size:15px;line-height:1.45}
+#team .brings{display:grid;gap:5px;margin-top:22px;padding-top:17px;border-top:1px solid #ffffff45}
+#team .brings b,#team .person-detail>b{color:#bfe0ca;font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+#team .brings span{color:#fff;font-weight:750}
+#team .network{min-height:0;padding:27px 28px;background:#fff}
+#team .network:before,#team .network:after{content:none}
+#team .team-flow{display:grid;grid-template-columns:minmax(100px,1fr) 40px minmax(100px,1fr) 40px minmax(110px,1.12fr);align-items:center;gap:8px}
+#team .flow-node{display:grid;align-content:center;gap:7px;min-height:154px;padding:18px 14px;border:1px solid var(--line);text-align:center}
+#team .flow-node b{font-size:19px;letter-spacing:-.04em;overflow-wrap:anywhere}
+#team .flow-node span{font-size:13px;font-weight:800;line-height:1.25}
+#team .flow-node small{font-size:11px;line-height:1.35;color:var(--quiet)}
+#team .you-node{background:var(--lime);color:var(--forest)}
+#team .project-node{background:#fff4d0;color:#513d05}
+#team .team-node{background:var(--forest);color:#fff}
+#team .team-node small{color:#d7eadc}
+#team .connector{position:relative;display:block;height:2px;background:var(--gold)}
+#team .connector:after{content:'';position:absolute;right:-1px;top:50%;width:8px;height:8px;border-top:2px solid var(--gold);border-right:2px solid var(--gold);transform:translateY(-50%) rotate(45deg)}
+#team .people{grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--ink)}
+#team .person{min-height:0;padding:27px 25px 23px}
+#team .fit{position:static;display:grid;justify-content:start;gap:0;max-width:none;color:var(--forest);font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-align:left}
+#team .fit strong{font-size:34px;line-height:.95;letter-spacing:-.06em}
+#team .avatar{position:absolute;right:25px;top:27px;width:47px;height:47px}
+#team .person h3{margin:22px 0 2px;font-size:28px;line-height:1;letter-spacing:-.055em}
+#team .person .major{margin:0 0 20px;color:var(--quiet);font-size:14px;line-height:1.35}
+#team .person-detail{display:grid;gap:4px;margin:14px 0;color:var(--ink);font-size:14px;line-height:1.4}
+#team .person-detail>b{color:var(--quiet)}
+#team .person-detail>strong{font-size:17px;line-height:1.18}
+#team .contribution{padding-top:14px;border-top:1px solid var(--line)}
+#team .contribution>strong{font-size:15px;line-height:1.38}
+#team .availability{margin:17px 0 0;color:var(--forest);font-size:13px;font-weight:850}
+#team .why{grid-template-columns:minmax(180px,.72fr) minmax(0,1.28fr);gap:28px;margin:0;padding:28px 30px}
+#team .why h3{margin:0;font-size:25px;line-height:1}
+#team .why p{margin:0 0 15px;color:var(--ink);font-size:15px;line-height:1.45}
+#team .coverage{gap:8px}
+#team .coverage span{padding:7px 9px;color:var(--forest);font-size:12px}
+#team .coverage .gap{color:#68736d;border-bottom-color:#9daaa1}
+#team .final{margin-top:20px;padding:25px 30px;background:#f5e3a3}
+#team .final h2{margin-bottom:5px;font-size:27px}
+#team .final p{font-size:14px;line-height:1.4}
+#team .final .eyebrow{margin-bottom:8px;color:#5c4b11}
+#team .pool{max-width:680px;margin-top:15px;padding-top:15px;border-top-color:#6c561d55}
+#team .restart{width:auto;margin:22px 0 0;padding:10px 14px;border:1px solid var(--line);background:transparent;color:var(--forest);font-weight:800;text-decoration:none}
+#team .restart:hover{border-color:var(--forest);background:var(--lime)}
+@media(max-width:850px){#team .teamhero{grid-template-columns:1fr}#team .team-flow{grid-template-columns:1fr;gap:0}#team .flow-node{min-height:0;padding:17px}#team .connector{width:2px;height:22px;justify-self:center}#team .connector:after{right:auto;bottom:-1px;left:50%;top:auto;transform:translateX(-50%) rotate(135deg)}#team .people{grid-template-columns:1fr}#team .person{border-right:0}#team .why{grid-template-columns:1fr}}
+@media(max-width:520px){#team .picked{padding:24px}#team .network{padding:18px}#team .flow-node{min-height:104px}#team .flow-node b{font-size:18px}#team .team-node span{font-size:12px}#team .person{padding:24px 18px 21px}#team .avatar{right:18px;top:24px}#team .why{padding:24px 18px}#team .final{padding:23px 18px}}
